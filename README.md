@@ -93,12 +93,12 @@ sandbox:
   namespace: agent-sandbox
   image: ghcr.io/your-org/agent-sandbox:latest
   resource_limits:
-    cpu: "1000m"
-    memory: "1Gi"
-  timeout: 600
+    cpu: "2000m"
+    memory: "2Gi"
+  timeout: 900
 ```
 
-> **Personal note:** I bumped the default CPU/memory limits and timeout for local experimentation — the upstream defaults were too restrictive for the longer-running tasks I've been testing.
+> **Personal note:** I bumped the default CPU/memory limits and timeout for local experimentation — the upstream defaults were too restrictive for the longer-running tasks I've been testing. Increased CPU to 2 cores, memory to 2Gi, and timeout to 15 minutes.
 
 ## License
 
